@@ -1,6 +1,6 @@
 
 //função para mostrar a mensagem
-function mostrarMensagem(){
+function mostrarMensagem() {
     var nome = document.getElementById('nome').value
     document.getElementById('resposta').textContent = 'Olá ' + nome
 }
