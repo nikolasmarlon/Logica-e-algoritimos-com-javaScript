@@ -19,7 +19,7 @@ function converterDuracao () {
 
     //altera o conteúdo dos parágrafos da resposta
     outTitulo.textContent = titulo
-    outResposta.textContent = horas + "h e" + minutos + "m"
+    outResposta.textContent = horas + ":" + minutos + "h"
 }
 
 //referênvia ao botão btConverter

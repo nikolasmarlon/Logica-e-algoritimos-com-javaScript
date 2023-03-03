@@ -6,6 +6,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vídeo Locadora</title>
+
+    <style>
+        body{
+            background-color: rgb(42, 42, 43);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            color: rgb(223, 217, 217);
+            font-size: 1rem;
+        }
+        div{
+            background-color: rgb(58, 57, 57);
+            max-width: 80%;
+            min-width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+            gap: 0.2rem;
+            border-radius: 8px;
+        }
+        div input{
+            max-width: 400px;
+            min-width: 400px;
+            padding: 8px;
+        }
+        div button{
+            max-width: 400px;
+            min-width: 400px;
+            padding: 8px;
+            text-transform: uppercase;
+        }
+    </style>
 </head>
 
 <body>
@@ -19,6 +53,7 @@
         <button id="btConverter">Converter em Horas e Minutos</button>
     </div>
     <div>
+        <h3>Valores convertidos</h3>
         <p id="outTitulo"></p>
         <p id="outResposta"></p>
     </div>
