@@ -7,6 +7,9 @@ function calcularPreco() {
     var inConsumo = document.getElementById('inConsumo')
     var outValor = document.getElementById('outValor')
 
+    //referência para a div de resposta que está oculta
+    var mostrarTotal = document.getElementById('mostrarTotal')
+
     //Obter conteúdo dos campos
     var preco = Number(inPreco.value)
     var consumo = Number(inConsumo.value)
@@ -16,6 +19,9 @@ function calcularPreco() {
 
     //Altera o conteúdo dos Títulos de resposta   
     outValor.textContent = `Total R$: ${total.toFixed(2)}`
+
+    //mudar css para apresentar bloco novamente
+    mostrarTotal.style.display = 'block'
 }
 
 
