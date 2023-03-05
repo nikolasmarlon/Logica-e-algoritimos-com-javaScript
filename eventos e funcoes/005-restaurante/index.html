@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante JS</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: rgb(58, 58, 58);
+            height: 100vh;
+            gap: 1rem;
+            color: rgb(237, 238, 240);
+
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            min-width: 80%;
+            background-color: rgb(71, 72, 74);
+            padding: 1rem;
+            border-radius: 8px;
+            gap: 0.5rem;
+        }
+
+        div input,
+        button {
+            padding: 0.5rem;
+            border-radius: 6px;
+            border: none;
+        }
+
+        @media (min-width: 700px) {
+            div {
+                min-width: 30%;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Restaurante JS</h1>
+        <label for="inPreco">Buffet por Quilo R$:</label> <input id="inPreco" type="text">
+        <label for="inConsumo">Consumo do Cliente (gr):</label> <input id="inConsumo" type="text">
+        <button id="btCalcular">Calcular Preço</button>
+    </div>
+
+    <div>
+        <h2>Total</h2>
+        <h3 id="outValor"></h3>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
